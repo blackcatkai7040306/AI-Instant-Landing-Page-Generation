@@ -1,0 +1,152 @@
+/* CSS declarations go here */
+body {
+  font-family: sans-serif;
+  background-attachment: fixed;
+
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+
+  padding: 0;
+  margin: 0;
+
+  font-size: 14px;
+}
+
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+  min-height: 100%;
+  background: white;
+}
+
+header {
+  padding: 20px 15px 15px 15px;
+  position: relative;
+}
+
+#login-buttons {
+  display: block;
+}
+
+h1 {
+  font-size: 1.5em;
+  margin: 0;
+  margin-bottom: 10px;
+  display: inline-block;
+  margin-right: 1em;
+}
+
+form {
+  margin-top: 10px;
+  margin-bottom: -10px;
+  position: relative;
+}
+
+.new-message input {
+  box-sizing: border-box;
+  padding: 10px 0;
+  background: transparent;
+  border: none;
+  width: 100%;
+  padding: 1rem;
+  font-size: 1em;
+  border: 1px solid gray;
+}
+
+.new-task input:focus{
+  outline: 0;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  background: white;
+}
+
+.delete {
+  float: right;
+  font-weight: bold;
+  background: none;
+  font-size: 1em;
+  border: none;
+  position: relative;
+}
+
+li {
+  position: relative;
+  list-style: none;
+  padding: 15px;
+  border: 3px solid #DA2323;
+  border-radius: 10px;
+  margin: 1rem;
+  width: 60%;
+  float: left;
+  background: #ffebee;
+
+  button {
+    background: #e0f7fa;
+    border: 2px solid darken(#e0f7fa, 20%);
+    outline: none;
+    width: calc(50% - 0.5rem);
+    height: 3rem;
+    font-size: 1rem;
+    float: left;
+
+    &.js-yes {
+      margin-right: 1rem;
+    }
+  }
+
+  h3 {
+    margin-top: 0;
+  }
+}
+
+li.text {
+  margin-left: 10px;
+}
+
+li.checked {
+  color: #888;
+}
+
+li.checked .text {
+  text-decoration: line-through;
+}
+
+li.private {
+  background: #eee;
+  border-color: #ddd;
+}
+
+header .hide-completed {
+  float: right;
+}
+
+.toggle-private {
+  margin-left: 5px;
+}
+
+@media (max-width: 600px) {
+  li {
+    padding: 12px 15px;
+  }
+
+  .search {
+    width: 150px;
+    clear: both;
+  }
+
+  .new-task input {
+    padding-bottom: 5px;
+  }
+}
+
+li.user {
+  border: 2px solid #006064;
+  float: right;
+  background: #e0f7fa;
+}

@@ -1,0 +1,10 @@
+<template name="chat">
+  <form class="new-message">
+    <input type="text" name="text" autocomplete="off" placeholder="Write a new message" />
+  </form>
+  <ul>
+    {{#each messages}}
+      {{> message}}
+    {{/each}}
+  </ul>
+</template>
