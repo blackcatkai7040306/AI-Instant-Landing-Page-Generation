@@ -1,4 +1,4 @@
-<h1 align="center"Tracker System</h1>
+<h1 align="center">Tracker System</h1>
 
 <h2>📌 About The Project</h2>
 <p>Magicflow is an AI productivity tracker designed to enhance personal productivity.</p>
