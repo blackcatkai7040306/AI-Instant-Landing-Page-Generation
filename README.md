@@ -1,46 +1,81 @@
-# Financial Management System
+<h1 align="center">B2B sales Platform</h1>
 
-## About The Project
-SimplyBudget AI is a financial management tool that utilizes artificial intelligence. It is designed to improve your budgeting experience and assist you in achieving financial freedom.
+<h2>📌 About The Project</h2>
+<p>SalesCred is an AI sales tool designed to build credibility and develop trust in a B2B sales environment. By leveraging advancements in B2B sales intelligence and digital marketing best practices, SalesCred aims to accelerate the process of establishing trust between salespeople and their customers..</p>
 
-Key technical challenges addressed:
-- Implemented idempotent transaction processing to handle network failures
-- Developed reconciliation algorithms for cross-system data validation
-- Built custom encryption for sensitive financial data at rest and in transit
+<p>Key differentiators include:</p>
+<ul>
+  <li>Embedded Talent Assistant model for operational scaling</li>
+  <li>Multilingual interface with RTL support (Arabic, French, German)</li>
+  <li>Automated document generation system (20+ templates)</li>
+  <li>Integrated payment processing via Stripe/Razorpay</li>
+  <li>Real-time collaboration between traders and talent teams</li>
+</ul>
 
-## Implementation Details
+<h3>Architecture Overview</h3>
+<img src="https://example.com/ilr-architecture-diagram.png" alt="System Architecture Diagram" width="600">
+<em>Simplified system architecture showing core components</em>
 
-### Core Components
-1. **Transaction Processor**
-   - Handles concurrent write operations
-   - Implements optimistic locking to prevent race conditions
-   - Uses two-phase commit for distributed transactions
+<h2>🛠 Technical Implementation</h2>
 
-2. **Data Validation Engine**
-   - Schema validation with JSON Schema
-   - Business rule validation (amount limits, frequency checks)
-   - Reference data lookups against external systems
+<h3>Frontend</h3>
+<ul>
+  <li>React.js/Next.js framework</li>
+  <li>Tailwind CSS for utility-first styling</li>
+  <li>Formik + Yup for complex form handling</li>
+  <li>i18next for multilingual support</li>
+</ul>
 
-3. **Reporting Module**
-   - Daily batch processing (windowed aggregation)
-   - Real-time dashboards via WebSockets
-   - PDF/Excel export capabilities
+<h3>Backend</h3>
+<ul>
+  <li>NestJS (Node.js) for modular architecture</li>
+  <li>PostgreSQL with TypeORM</li>
+  <li>JWT authentication with role-based access</li>
+  <li>AWS S3 for document storage</li>
+</ul>
 
-### Technical Challenges
-- **Data Consistency**: Solved with event sourcing pattern
-- **Performance Bottlenecks**: Added Redis caching layer
-- **Security Requirements**: Implemented PCI DSS compliant logging
-- **Integration Issues**: Built adapter pattern for bank APIs
+<h3>Key Challenges</h3>
+<ul>
+  <li><strong>Complex Form States:</strong> Implemented auto-save functionality using debounced API calls and local storage fallback</li>
+  <li><strong>Document Generation:</strong> Developed PDF templating system using PDFKit with dynamic layout switching</li>
+  <li><strong>RTL Support:</strong> Created CSS flip utility for Arabic interface while maintaining LTR for numerical data</li>
+</ul>
 
-## Getting Started
+<h2>🚀 Features</h2>
+<table>
+  <tr>
+    <th>Module</th>
+    <th>Description</th>
+  </tr>
+  <tr>
+    <td>RFQ Management</td>
+    <td>End-to-end inquiry processing with vendor matching</td>
+  </tr>
+  <tr>
+    <td>Talent Dashboard</td>
+    <td>Delegated access control for operational support</td>
+  </tr>
+  <tr>
+    <td>Admin Console</td>
+    <td>Complete system monitoring and user management</td>
+  </tr>
+</table>
 
-### Prerequisites
-- Java 11+
-- PostgreSQL 12+
-- Redis 6+
+<h2>📦 Installation</h2>
+<pre>
+git clone https://github.com/ilr-solutions/procurement-platform.git
+cd procurement-platform
+npm install
+cp .env.example .env
+npm run dev
+</pre>
 
-### Installation
-```bash
-git clone https://github.com/yourrepo/financial-system.git
-cd financial-system
-mvn clean install
+<h2>📅 Roadmap</h2>
+<ul>
+  <li>Phase 1: Core procurement workflow (Current)</li>
+  <li>Phase 2: Mobile app and client portal</li>
+  <li>Phase 3: Advanced analytics engine</li>
+</ul>
+
+<h2>📝 License</h2>
+<p>Proprietary software © 2023 ILR Solutions</p>
